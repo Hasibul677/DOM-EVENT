@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section">
+        <ul id="parent">
+            <li class="item">lorem10</li>
+            <li id="second" class="item">lorem11</li>
+            <li class="item">lorem12</li>
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById('second').addEventListener('click', function(event){
+            console.log('clicked by 1');
+            event.stopImmediatePropagation();
+         
+        });
+        document.getElementById('second').addEventListener('click', function(){
+            console.log('clicked by 2');
+           
+        });
+        document.getElementById('second').addEventListener('click', function(){ 
+            console.log('clicked by 3');
+           
+        });
+         
+       /*  document.getElementById('parent').addEventListener('click', function(){
+            console.log('clicked by ul');
+        
+        })
+        
+        document.getElementById('section').addEventListener('click', function(){
+            console.log('clicked by section');
+        
+
+        }) */
+
+    </script>
+</body>
+</html>

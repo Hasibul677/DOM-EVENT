@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="album" class="card" style="width: 18rem;">
+            <img src="images/1.jpg" class="card-img-top" alt="...">
+            <div class="d-flex justify-content-between mt-3">
+                <button id="like" class="rounded" href=""><i class="fas fa-thumbs-up">Like</i></button>
+                <button id="commentBtn" class="rounded" href=""><i class="fas fa-comment-alt">Comment</i><span id="comCount"></span></button>
+                <button id="share" class="rounded" href=""> <i class="fas fa-share">Share</i></button>
+            </div>
+
+            <div id="comment-part" class="d-flex align-items-center mt-4 d-none">
+                <img id="image-part" class="rounded-circle" style="height:50px; width: 50px;" src="images/shanto.jpg"
+                    alt="">
+                <input id="commentText" class="ms-2 rounded-3 w-100" type="text" placeholder="Submit your commne here">
+                <button id="addText">submit</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="fun.js"></script>
+</body>
+
+</html>

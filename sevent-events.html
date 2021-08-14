@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <!-- onclick event using onclick -->
+    <button onclick="document.body.style.background = 'red'" class="bg-danger px-5 py-2 ms-5">inner</button>
+    <!-- onclick event using function -->
+    <button onclick="changedColor()" class="bg-info px-5 py-2 ms-5">function</button>
+    <!-- onclick event using id -->
+    <button id="background-Dark" class="bg-dark px-5 py-2 ms-5">function-name</button>
+    <!-- onclick event using id -->
+    <button id="background-yellow" class="bg-warning px-5 py-2 ms-5">using id</button>
+    <!-- onclick event using addEvenLisener -->
+    <button id="background-green" class="bg-success px-5 py-2 ms-5">addEvenLisener</button>
+    <!-- onclick event using addEvenLisener anonimous function -->
+    <button id="background-DarkGray" class="bg-secondary px-5 py-2 ms-5">Anonimous</button>
+    <!-- onclick event using direct addEvenLisener-->
+    <button id="background-Aqua" class="bg-primary px-5 py-2 ms-5 mt-5">Direct</button>
+
+
+    <script src="event.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Blog list</h1>
+<p id="delete-text">delete propertics</p>
+<input id="confirm" type="text">
+<button id="submit" disabled>delete</button>
+
+<script>
+// click
+    document.getElementById('submit').addEventListener('click', function(){
+        let deleteText = document.getElementById('delete-text');
+        deleteText.style.display='none';
+        const inputText =document.getElementById('confirm');
+        inputText.value='';
+       
+    });
+// focus
+    document.getElementById('confirm').addEventListener('focus', function(){
+     const inputText =document.getElementById('confirm');
+     document.body.style.backgroundColor='red';
+     
+
+    });
+// blur
+    document.getElementById('confirm').addEventListener('blur', function(){
+     const inputText =document.getElementById('confirm');
+     document.body.style.backgroundColor='white';
+    });
+// keydown
+   /*  document.getElementById('confirm').addEventListener('keydown', function(){
+     const inputText =document.getElementById('confirm');
+     console.log(inputText.value);
+    }); */
+// keypress
+   /*  document.getElementById('confirm').addEventListener('keypress', function(){
+     const inputText =document.getElementById('confirm');
+     console.log(inputText.value);
+    }); */
+// keyup
+    /* document.getElementById('confirm').addEventListener('keyup', function(event){
+     const inputText =document.getElementById('confirm');
+     console.log(inputText.value);
+    }); */
+// change
+    document.getElementById('confirm').addEventListener('keyup', function(event){
+     let deleteText = document.getElementById('submit');
+     if(event.target.value =='delete'){
+       deleteText.removeAttribute('disabled');     
+     }
+     else{
+        deleteText.setAttribute('disabled', true);
+     }
+    });
+
+</script>
+
+</body>
+</html>

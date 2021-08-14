@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Comment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- <p id="update-value"></p>
+    <input id="takeInput" type="text">
+    <button id="submit" class="text-uppercase">submit</button>
+
+  <script>
+     document.getElementById("submit").addEventListener('click', function(){
+       let p = document.getElementById('update-value');
+       let input = document.getElementById('takeInput');
+       p.innerText = input.value;
+       input.value = '';
+
+     })
+  </script> -->
+
+  <h1>Ami kisu jani na</h1>
+
+ <div id="tonni">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt animi nostrum esse a doloremque numquam architecto reprehenderit non modi molestiae, accusantium iusto voluptatum sapiente eligendi corporis omnis excepturi doloribus!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt animi nostrum esse a doloremque numquam architecto reprehenderit non modi molestiae, accusantium iusto voluptatum sapiente eligendi corporis omnis excepturi doloribus!</p>
+ </div>
+ <textarea name="" id="textField" cols="60" rows="6"></textarea><br>
+ <button id="submit">submit</button>
+
+ <script>
+     document.getElementById('submit').addEventListener('click', function(){
+         const p = document.createElement('p');
+         const textArea = document.getElementById('textField');
+         p.innerText = textArea.value;
+         const family = document.getElementById('tonni');
+         family.appendChild(p);
+         textArea.value= '';
+     })
+ </script>
+
+
+
+    
+</body>
+</html>

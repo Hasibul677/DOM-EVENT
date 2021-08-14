@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to my dark world</h1>
+    <h2 id="delete-text">ki r bolbo re vai, jibon tai emon</h2>
+    <input id="delete-confirm" type="text">
+    <button id="click-able" disabled>Delete</button>
+
+    <script>
+        // click event 
+        document.getElementById('click-able').addEventListener('click', function(){
+            const deleteText = document.getElementById('delete-text');
+            deleteText.style.display ='none';
+           const clean = document.getElementById('delete-confirm');
+           clean.value='';
+        }); 
+        // focus event 
+      /*   document.getElementById('delete-confirm').addEventListener('focus', function(){
+            document.body.style.backgroundColor='red';
+        }); */
+        // blur event 
+        /* document.getElementById('delete-confirm').addEventListener('blur', function(){
+            document.body.style.backgroundColor='white';
+        }); */
+        // keydown event 
+        /*  document.getElementById('delete-confirm').addEventListener('keydown', function(){
+            const text = document.getElementById('delete-confirm');
+            console.log(text.value);
+        }); */ 
+        // keypress event 
+        /* document.getElementById('delete-confirm').addEventListener('keypress', function(){
+            const text = document.getElementById('delete-confirm');
+            console.log(text.value);
+        }); */
+        // keyup event 
+       /*  document.getElementById('delete-confirm').addEventListener('keyup', function(){
+            const text = document.getElementById('delete-confirm');
+            console.log(text.value);
+        }); */
+    
+        // change event 
+        /* document.getElementById('delete-confirm').addEventListener('change', function(){
+            const text = document.getElementById('delete-confirm');
+            console.log(text.value);
+        }); */
+         // keyup event 
+         document.getElementById('delete-confirm').addEventListener('keyup', function(event){
+            const deleteBtn = document.getElementById('click-able');
+            if(event.target.value=='delete'){
+                 deleteBtn.removeAttribute('disabled')
+             }
+             else{
+                deleteBtn.setAttribute('disabled', true);
+             }
+        });
+    </script>
+</body>
+</html>
